@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip show:*)",
+      "Bash(pip3 show:*)",
+      "Bash(pip install:*)",
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(curl -s http://localhost:5000/lineup_status.json)",
+      "Bash(python -m json.tool)",
+      "Bash(python -m pytest tests/ -q)",
+      "Bash(python -c \"import sys; print\\(sys.executable\\)\")",
+      "Bash(python -c \"import waitress; print\\(''ok''\\)\")",
+      "Bash(ffmpeg -version)"
+    ]
+  }
+}
