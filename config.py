@@ -9,13 +9,13 @@ class ChannelConfig(TypedDict):
 
 
 CHANNELS: list[ChannelConfig] = [
-    {"guide_number": "1", "guide_name": "LTV1",    "lrt_channel_param": "LTV1"},
-    {"guide_number": "2", "guide_name": "LTV2",    "lrt_channel_param": "LTV2"},
-    {"guide_number": "3", "guide_name": "WORLD",   "lrt_channel_param": "WORLD"},
-    {"guide_number": "4", "guide_name": "LR",      "lrt_channel_param": "LR"},
-    {"guide_number": "5", "guide_name": "Klasika", "lrt_channel_param": "Klasika"},
-    {"guide_number": "6", "guide_name": "Opus",    "lrt_channel_param": "Opus"},
-    {"guide_number": "7", "guide_name": "LRT100",  "lrt_channel_param": "LRT100"},
+    {"guide_number": "1", "guide_name": "LRT TV", "lrt_channel_param": "LTV1"},
+    {"guide_number": "2", "guide_name": "LRT Plius",      "lrt_channel_param": "LTV2"},
+    {"guide_number": "3", "guide_name": "LRT Lituanica",  "lrt_channel_param": "WORLD"},
+    {"guide_number": "4", "guide_name": "LRT Radijas",    "lrt_channel_param": "LR"},
+    {"guide_number": "5", "guide_name": "LRT Klasika",    "lrt_channel_param": "Klasika"},
+    {"guide_number": "6", "guide_name": "LRT Opus",       "lrt_channel_param": "Opus"},
+    {"guide_number": "7", "guide_name": "LRT 100",        "lrt_channel_param": "LRT100"},
 ]
 
 
