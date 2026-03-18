@@ -97,13 +97,15 @@ class TestLineupJson:
         numbers = [ch["GuideNumber"] for ch in data]
         assert len(numbers) == len(set(numbers))
 
-    def test_channel_1_is_ltv1(self, client):
+    def test_channel_1_is_lrt_televizija(self, client):
         data = client.get("/lineup.json").get_json()
         ch1 = next(ch for ch in data if ch["GuideNumber"] == "1")
-        assert ch1["GuideName"] == "LTV1"
+        assert ch1["GuideName"] == "LRT TV"
 
     def test_all_expected_channels_present(self, client):
         data = client.get("/lineup.json").get_json()
         names = {ch["GuideName"] for ch in data}
-        for expected in ("LTV1", "LTV2", "WORLD", "LR", "Klasika", "Opus", "LRT100"):
+        for expected in ("LRT TV", "LRT Plius", "LRT Lituanica",
+                         "LRT Radijas", "LRT Klasika", "LRT Opus", "LRT 100"):
             assert expected in names
+
