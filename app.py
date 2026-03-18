@@ -13,5 +13,7 @@ def create_app(config_object: object = Config) -> Flask:
 
 
 if __name__ == "__main__":
+    from waitress import serve
+
     application = create_app()
-    application.run(host="0.0.0.0")
+    serve(application, host="0.0.0.0", port=5000)

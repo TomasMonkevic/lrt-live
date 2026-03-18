@@ -38,7 +38,7 @@ docker run -d -p 5000:5000 --name lrt-live lrt-live
 ```bash
 pip install -r requirements.txt
 cp .env.example .env
-python app.py
+python app.py  # serves via Waitress on port 5000
 ```
 
 ## Jellyfin Configuration
