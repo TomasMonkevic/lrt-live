@@ -74,7 +74,5 @@ def stream_channel(channel_number: str) -> Response:
         mimetype="video/mp2t",
         headers={
             "Cache-Control": "no-cache",
-            "Connection": "keep-alive",
-            "Transfer-Encoding": "chunked",
         },
     )
